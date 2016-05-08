@@ -60,8 +60,3 @@ def log(message):
     with open(os.path.join(path, logfile_name), 'a+') as f:
         t = strftime("%d %b %Y %H:%M:%S", gmtime())
         f.write("\n" + t + " " + message)
-
-
-if __name__ == "__main__":
-    tweet_text = create_tweet()
-    tweet(tweet_text)
