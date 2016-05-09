@@ -69,3 +69,4 @@ src/twitter/secrets.py
 
 # Dictcc files
 dict_cut.txt
+.pickle
