@@ -66,3 +66,6 @@ src/twitter/secrets.py
 
 #Pycharm related files
 .idea/
+
+# Dictcc files
+dict_cut.txt
