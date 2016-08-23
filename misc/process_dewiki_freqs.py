@@ -40,7 +40,7 @@ def filter_freqs(freqs, constraint=100, stopwords=set()):
     freq_keys = set(freqs.keys())
     for stopword in stopwords:
         if stopword in freq_keys:
-            del freqs[stopword]
+            freqs.pop(stopword, None)
 
     print "Sorting words in vocab by frequency..."
     sorted_freqs = sorted(freqs.items(), key=lambda x: x[1])
